@@ -1,0 +1,123 @@
+.tickets__list {}
+
+.tickets__list-item {
+    box-shadow: 0px 4px 10px 3px rgb(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tickets__item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header-price {
+    position: relative;
+    color: rgb(33, 150, 243);
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 24px;
+
+    &::after {
+        content: "₽";
+        position: absolute;
+        top: 0;
+        right: -15px;
+        color: rgb(33, 150, 243);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+}
+
+.header-logo {
+    width: 110px;
+}
+
+.tickets__item-info {
+    margin-bottom: 10px;
+    display: flex;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.info-route {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.info-route__country {}
+
+.info-route__country-name {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    color: rgb(160, 176, 185);
+}
+
+.info-route__time {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+    color: rgb(74, 74, 74);
+}
+
+.info-route__way {}
+
+.info-route__way-text {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    color: rgb(160, 176, 185);
+}
+
+.info-route__way-time {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+    color: rgb(74, 74, 74);
+}
+
+.info-route__stops {}
+
+.info-route__stops-count {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    color: rgb(160, 176, 185);
+}
+
+.info-route__stops-name {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+    color: rgb(74, 74, 74);
+}
+
+.tickets__btn {
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border: none;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background: rgb(33, 150, 243);
+    transition: all .2s ease-in;
+    border-radius: 5px;
+
+    &:hover {
+        color: rgb(255, 255, 255);
+        background: rgb(45, 140, 218);
+    }
+}
