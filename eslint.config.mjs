@@ -24,7 +24,7 @@ export default {
       Object.entries({
         ...globals.browser,
         ...globals.es2021,
-      }).map(([key, value]) => [key.trim(), value])
+      }).map(([key, value]) => [key.trim(), value]),
     ),
   },
   plugins: {
@@ -36,11 +36,10 @@ export default {
   rules: {
     ...js.configs.recommended.rules,
     ...pluginReact.configs.recommended.rules,
+
     "prettier/prettier": "error",
-    indent: ["error", 2],
+
     "linebreak-style": ["off", "unix"],
-    quotes: ["error", "double"],
-    semi: ["error", "always"],
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "import/no-unresolved": ["error", { caseSensitive: false }],

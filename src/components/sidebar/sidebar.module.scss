@@ -17,8 +17,12 @@
 }
 
 .sidebar__list {
-    display: flex;
+    display: none;
     flex-direction: column;
+}
+
+.sidebar__list-active {
+    display: flex;
 }
 
 .sidebar__list-item {
@@ -209,13 +213,13 @@
     border: none;
     background: none;
     transform: rotate(-90deg);
-    transition: transform .2s ease-in;
+    transition: transform .3s ease-in;
 }
 
 .sidebar__dropdown-svg {
     stroke: #000;
     fill: none;
-    transition: all .1s ease-in;
+    transition: all .2s ease-in;
 
     &:hover {
         stroke: rgb(33, 150, 243);
