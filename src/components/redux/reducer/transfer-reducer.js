@@ -1,9 +1,9 @@
 const transfer = [
-  { id: 0, name: "all", check: false },
-  { id: 1, name: "no_transfer", check: false },
-  { id: 2, name: "one_transfer", check: false },
-  { id: 3, name: "two_transfer", check: false },
-  { id: 4, name: "three_transfer", check: false },
+  { id: 0, name: "all", check: true },
+  { id: 1, name: "no_transfer", check: true },
+  { id: 2, name: "one_transfer", check: true },
+  { id: 3, name: "two_transfer", check: true },
+  { id: 4, name: "three_transfer", check: true },
 ];
 
 export const transferReducer = (state = transfer, action) => {

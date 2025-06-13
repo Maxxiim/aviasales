@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
-import brandImg from "../../img/brand/brand.svg";
-
 import styles from "./ticket.module.scss";
 
 const Ticket = ({ tickets, spinner, loading }) => {
   const [visibleTicket, setVisibleTicket] = useState(5);
+
   const [newTickets, setNewTickets] = useState([]);
+
   const selectorDateStateCheck = useSelector((state) => state.transfer);
+
   const priorityFilter = useSelector((state) => state.filter);
 
   const showMoreTicket = () => {
@@ -110,14 +111,13 @@ const Content = ({
     <React.Fragment>
       <ul className={`${styles["tickets__list"]}`}>
         {tickets.slice(0, visibleTicket).map((ticket, index) => {
-          console.log(ticket);
           return (
             <li className={`${styles["tickets__list-item"]}`} key={index}>
               <div className={`${styles["tickets__item-header"]}`}>
                 <p className={`${styles["header-price"]}`}>{ticket.price}</p>
                 <img
                   className={`${styles["header-logo"]}`}
-                  src={brandImg}
+                  src={`https://pics.avs.io/110/36/${ticket.carrier}.png`}
                   alt={`carrier airline ${ticket.carrier}`}
                 />
               </div>
